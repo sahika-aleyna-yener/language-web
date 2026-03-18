@@ -1,56 +1,100 @@
-# Language Web
+# 大人Lab (Adult Lang Lab)
 
-Modern, kullanıcı dostu bir dil öğrenme uygulaması.
+Yetişkinlikte dil öğrenmenin mümkün ve ölçülebilir olduğunu göstermek için tasarlanmış, AI destekli deneysel bir web uygulaması.
 
-## Proje Özeti
+## Proje Hakkında
 
-Language Web; kelime, alıştırma ve düzenli tekrar odaklı bir dil öğrenme deneyimi sunmayı amaçlayan web tabanlı bir uygulamadır.
+Bu proje, "Yetişkinler dil öğrenmede dezavantajlıdır" iddiasını pratikte test etmeyi hedefler.
+Uygulama Japonca ve Korece odaklıdır; kısa döngülü öğrenme, anlık geri bildirim ve motivasyon takibiyle düzenli ilerlemeyi görünür hale getirir.
 
-## Hedefler
+## Amaç
 
-- Dil öğrenimini günlük rutine dönüştürmek
-- Basit ve akıcı bir kullanıcı deneyimi sağlamak
-- İlerleme takibini anlaşılır hale getirmek
+- Yetişkin öğrenenlerin dil ediniminde sürdürülebilir bir model sunmak
+- Öğrenmeyi küçük, tekrarlanabilir adımlara bölmek
+- Öğrenme performansını (doğru oranı, seri, toplam etkileşim) takip etmek
+- Bilimsel bulguları ürün deneyimiyle birleştirmek
 
-## Planlanan Özellikler
+## Öne Çıkan Özellikler
 
-- Kullanıcı kayıt ve giriş sistemi
-- Seviye bazlı ders yapısı
-- Kelime kartları ve quizler
-- Günlük hedef ve seri (streak) takibi
-- İlerleme panosu
+### 1) Flashcard Modu
+- Karaktere tıklayarak anlam ve okunuşu açığa çıkarma
+- "Bildim / Bilmedim" akışıyla seri (streak) takibi
+- İlerleme çubuğu ile set tamamlama görünürlüğü
 
-## Teknoloji Yaklaşımı
+### 2) Quiz Modu
+- 4 seçenekli çoktan seçmeli test
+- Doğru/yanlış için anlık geri bildirim
+- Doğru cevabın otomatik vurgulanması
 
-Bu depo şu anda başlangıç aşamasındadır. Uygulama geliştikçe burada kullanılan teknolojiler ve mimari kararlar güncellenecektir.
+### 3) AI Sensei Modu
+- Kullanıcı sorularına yapay zeka destekli yanıt akışı
+- Japonca/Korece karakter, kelime, kısa cümle açıklamaları
+- Yetişkin öğrenme motivasyonunu destekleyen konuşma deneyimi
 
-## Kurulum
+### 4) Bilim Sekmesi
+- Kritik dönem hipotezi ve karşı araştırmaların özetlenmesi
+- Yetişkin öğrenme avantajlarına dair kısa, anlaşılır içerik
 
-Depoyu klonlayın:
+## Dil Kapsamı
+
+- Japonca: Hiragana + temel Kanji örnekleri
+- Korece: Hangul + temel kelime örnekleri
+- Üst bölümdeki dil anahtarı ile anlık geçiş
+
+## Kullanıcı Metrikleri
+
+Uygulama arayüzünde canlı olarak izlenir:
+
+- Görülen karakter sayısı
+- Doğru cevap sayısı
+- Seri (streak)
+- Başarı oranı
+
+## Teknoloji
+
+- Tek dosya frontend prototipi: HTML + CSS + Vanilla JavaScript
+- Harici fontlar: Google Fonts
+- AI sohbet akışı: Anthropic Messages API (istemci tarafı örnek entegrasyon)
+
+## Proje Yapısı
+
+Bu sürüm tek sayfalık bir prototip olarak hazırlanmıştır:
+
+- `Untitled-1.html`: Uygulamanın tüm arayüzü, stilleri ve etkileşim mantığı
+- `README.md`: Proje dokümantasyonu
+
+## Kurulum ve Çalıştırma
+
+1. Depoyu klonlayın:
 
 ```bash
 git clone https://github.com/sahika-aleyna-yener/language-web.git
 cd language-web
 ```
 
-Bağımlılık ve çalıştırma adımları proje iskeleti eklendikçe güncellenecektir.
+2. `Untitled-1.html` dosyasını bir tarayıcıda açın.
 
-## Yol Haritası
+Not: AI Sensei bölümündeki API çağrısı, güvenli üretim kullanımı için backend proxy ve API anahtar yönetimi gerektirir.
 
-- Proje iskeletinin oluşturulması
-- Kimlik doğrulama akışının eklenmesi
-- İlk ders ve quiz modülünün yayınlanması
-- İlerleme ekranının tamamlanması
+## Ürün Vizyonu
+
+Bu uygulama bir MVP/deney prototipidir. Sonraki iterasyonlarda hedef:
+
+- Çoklu ders setleri ve seviyeleme
+- Kalıcı kullanıcı ilerleme kaydı
+- Aralıklı tekrar algoritması (SRS)
+- Daha güvenli AI entegrasyonu (server-side)
+- Performans analitiği ve kişiselleştirme
 
 ## Katkı
 
-Katkılara açıktır.
+Katkıya açıktır.
 
-1. Bu depoyu fork edin
-2. Yeni bir branch açın (`feature/yeni-ozellik`)
+1. Depoyu fork edin
+2. Yeni bir branch açın (`feature/ozellik-adi`)
 3. Değişikliklerinizi commit edin
 4. Pull request oluşturun
 
 ## Lisans
 
-Bu proje için lisans henüz tanımlanmadı.
+Henüz lisans eklenmedi. Uygun lisans türü belirlendikten sonra bu bölüm güncellenecektir.
